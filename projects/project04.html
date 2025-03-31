@@ -43,9 +43,9 @@
       .code {
         background-color: #005a8b;
         color: #fff;
-        padding: 0 10px;
+        padding: 10px;
         border-radius: 5px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
       }
       a {
         color: #1e90ff;
@@ -71,152 +71,126 @@
       </nav>
     </header>
     <div class="container">
-      <h2>Project 2:</h2>
+      <h2>Project 4:</h2>
       <h3>
-        Styling Your Homepage:
-        <a href="examples/project2/index.html" target="_blank">Example Site</a>
+        Adding Animations and Interactivity:
+        <a href="examples/project4/index.html" target="_blank">Example Site</a>
       </h3>
 
       <div class="goal">
         <h3>Goal:</h3>
         <span
-          >Take your homepage from Project 1 and style it using CSS. Add some
-          images and make it look better!
+          >Add some fun animations and interactive elements to your webpage
+          using CSS and basic JavaScript!
         </span>
       </div>
 
       <div class="instructions">
         <h3>Instructions:</h3>
-        <h4>Start with Your Project 1 Files:</h4>
+        <h4>Start with Your Project 3 Files:</h4>
         <ul>
           <li>
-            Make a copy of your "Project1" folder and rename it to "Project2"
+            Make a copy of your "Project3" folder and rename it to "Project4"
           </li>
         </ul>
-        <h4>Add Images to Your Page:</h4>
-        <ul>
-          <li>Create an "images" folder inside your Project2 folder</li>
-          <li>
-            Add at least two images to this folder:
-            <ul>
-              <li>One profile picture of yourself</li>
-              <li>One image related to your interests or hobbies</li>
-            </ul>
-          </li>
-          <li>
-            Add the images to your HTML file using the &lt;img&gt; tag:
-            <div class="code">
-              <pre><code>
-&lt;img src="images/your-image.jpg" alt="Description of your image"&gt;
-              </code></pre>
-            </div>
-          </li>
-        </ul>
-        <h4>Create a CSS File:</h4>
-        <ul>
-          <li>In your Project2 folder, create a new file named "styles.css"</li>
-          <li>
-            Add this line in your HTML file's &lt;head&gt; section to link the
-            CSS:
-            <div class="code">
-              <pre><code>
-&lt;link rel="stylesheet" href="styles.css"&gt;
-              </code></pre>
-            </div>
-          </li>
-        </ul>
-        <h4>Add Basic CSS Styles:</h4>
+        <h4>Add CSS Animations:</h4>
         <ul>
           <li>
-            Open your styles.css file and add these basic styles:
+            Open your styles.css file and add these animation styles:
             <div class="code">
               <pre><code>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
+/* Add hover effect to links */
+a:hover {
+    color: #ff6b6b;
+    transition: color 0.3s ease;
 }
 
-h1 {
-    color: #333;
-    text-align: center;
+/* Add fade-in animation to sections */
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
 }
 
-img {
-    max-width: 300px;
-    display: block;
-    margin: 20px auto;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-p {
-    line-height: 1.6;
-    color: #444;
-}
-              </code></pre>
-            </div>
-          </li>
-          <li>Try changing the colors and values to make it your own!</li>
-        </ul>
-        <h4>Style Your Navigation:</h4>
-        <ul>
-          <li>
-            Add these styles to make your navigation look better:
-            <div class="code">
-              <pre><code>
-nav {
-    background-color: #333;
-    padding: 10px;
-    margin: 20px 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 0 5px;
-}
-
-nav a:hover {
-    background-color: #555;
-    border-radius: 3px;
+/* Add a simple hover effect to images */
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
               </code></pre>
             </div>
           </li>
         </ul>
-        <h4>Viewing Your Web Page:</h4>
+        <h4>Add Basic JavaScript:</h4>
+        <ul>
+          <li>Create a new file named "script.js" in your Project4 folder</li>
+          <li>
+            Add this code to script.js:
+            <div class="code">
+              <pre><code>
+// Add a simple click counter
+let clickCount = 0;
+
+function countClicks() {
+    clickCount++;
+    alert('You clicked ' + clickCount + ' times!');
+}
+
+// Add this to your HTML file's body tag:
+// &lt;button onclick="countClicks()"&gt;Click me!&lt;/button&gt;
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            Add this line to your HTML file's &lt;head&gt; section:
+            <div class="code">
+              <pre><code>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+              </code></pre>
+            </div>
+          </li>
+        </ul>
+        <h4>Test Your Page:</h4>
         <ol>
           <li>
             Run Your Project with Live Server:
             <ul>
               <li>Right-click on your "index.html" file</li>
               <li>Select "Open with Live Server"</li>
-              <li>This will open your web page in your browser</li>
             </ul>
           </li>
           <li>
-            Try making changes to your CSS file and refresh the page to see what
-            happens!
+            Try out the animations:
+            <ul>
+              <li>Hover over links to see the color change</li>
+              <li>Hover over images to see them scale up</li>
+              <li>Watch sections fade in as you scroll</li>
+              <li>Click the button to test the counter</li>
+            </ul>
           </li>
         </ol>
         <h4>Submission:</h4>
         <ul>
           <li>
-            Make sure all your files are in the Project2 folder:
+            Make sure your Project4 folder contains:
             <ul>
-              <li>index.html</li>
-              <li>styles.css</li>
+              <li>index.html file</li>
+              <li>styles.css file with animations</li>
+              <li>script.js file with your JavaScript code</li>
               <li>images folder with your images</li>
             </ul>
           </li>
-          <li>Compress your "Project2" folder into a zip file</li>
+          <li>Compress your "Project4" folder into a zip file</li>
           <li>
             Submit your zip file here:
             <a
-              href="https://liveumb-my.sharepoint.com/:f:/g/personal/david_martinez003_umb_edu/EtFeHqhd9ChDk9mJsfSsIoABNpbicaBK8-W4np8bSDWesg"
+              href="https://liveumb-my.sharepoint.com/:f:/g/personal/david_martinez003_umb_edu/EvoHkZRrHAFJkRfU5RCvW9kB_Yr773oaFl4ThwqC4qz7FA"
               target="_blank"
-              >Submit Project 2</a
+              >Submit Project 4</a
             >
           </li>
         </ul>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundations of Web Design</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .container li {
+        padding: 5px 0;
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .goal {
+        background-color: #005a8b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .goal span {
+        color: #fede42;
+      }
+      .instructions {
+        margin-bottom: 20px;
+      }
+      .code {
+        background-color: #005a8b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      a {
+        color: #1e90ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Foundations of Web Design</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../course-info.html">Course Info</a></li>
+          <li><a href="../class-slides.html">Class Slides</a></li>
+          <li><a href="../class-exercises.html">Class Exercises</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Final Project:</h2>
+      <h3>
+        Creating Your Portfolio Website:
+        <a href="examples/final-project/index.html" target="_blank"
+          >Example Site</a
+        >
+      </h3>
+
+      <div class="goal">
+        <h3>Goal:</h3>
+        <span
+          >Create a beautiful portfolio website that showcases all your projects
+          from this course!
+        </span>
+      </div>
+
+      <div class="instructions">
+        <h3>Instructions:</h3>
+        <h4>Create Your Portfolio Folder:</h4>
+        <ul>
+          <li>Create a new folder named "Portfolio" in your workspace</li>
+          <li>
+            Create these files in your Portfolio folder:
+            <ul>
+              <li>index.html (main page)</li>
+              <li>styles.css (for styling)</li>
+              <li>script.js (for interactivity)</li>
+              <li>images folder (for your images)</li>
+            </ul>
+          </li>
+        </ul>
+        <h4>Set Up Your Main Page:</h4>
+        <ul>
+          <li>
+            Open index.html and add this basic structure:
+            <div class="code">
+              <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Portfolio&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;a href="#about"&gt;About Me&lt;/a&gt;
+            &lt;a href="#projects"&gt;My Projects&lt;/a&gt;
+            &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;section id="about"&gt;
+        &lt;h2&gt;About Me&lt;/h2&gt;
+        &lt;p&gt;Write a brief introduction about yourself here.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="projects"&gt;
+        &lt;h2&gt;My Projects&lt;/h2&gt;
+        &lt;div class="project-grid"&gt;
+            &lt;div class="project-card"&gt;
+                &lt;h3&gt;Project 1&lt;/h3&gt;
+                &lt;p&gt;Description of your first project&lt;/p&gt;
+                &lt;a href="project1/index.html"&gt;View Project&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="project-card"&gt;
+                &lt;h3&gt;Project 2&lt;/h3&gt;
+                &lt;p&gt;Description of your second project&lt;/p&gt;
+                &lt;a href="project2/index.html"&gt;View Project&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="project-card"&gt;
+                &lt;h3&gt;Project 3&lt;/h3&gt;
+                &lt;p&gt;Description of your third project&lt;/p&gt;
+                &lt;a href="project3/index.html"&gt;View Project&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="project-card"&gt;
+                &lt;h3&gt;Project 4&lt;/h3&gt;
+                &lt;p&gt;Description of your fourth project&lt;/p&gt;
+                &lt;a href="project4/index.html"&gt;View Project&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section id="contact"&gt;
+        &lt;h2&gt;Contact Me&lt;/h2&gt;
+        &lt;p&gt;Add your contact information here.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 Your Name&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </div>
+          </li>
+        </ul>
+        <h4>Add Your Styles:</h4>
+        <ul>
+          <li>
+            Open styles.css and add these styles:
+            <div class="code">
+              <pre><code>
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Project grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+              </code></pre>
+            </div>
+          </li>
+        </ul>
+        <h4>Add Your Projects:</h4>
+        <ul>
+          <li>
+            Copy all your project folders (Project1, Project2, Project3,
+            Project4) into your Portfolio folder
+          </li>
+          <li>
+            Update the project descriptions in index.html to match your actual
+            projects
+          </li>
+          <li>Make sure all project links work correctly</li>
+        </ul>
+        <h4>Test Your Portfolio:</h4>
+        <ol>
+          <li>
+            Run Your Project with Live Server:
+            <ul>
+              <li>Right-click on your "index.html" file</li>
+              <li>Select "Open with Live Server"</li>
+            </ul>
+          </li>
+          <li>
+            Check that everything works:
+            <ul>
+              <li>All navigation links should work</li>
+              <li>Project cards should look good</li>
+              <li>Page should look good on both desktop and mobile</li>
+              <li>All project links should work</li>
+            </ul>
+          </li>
+        </ol>
+        <h4>Submission:</h4>
+        <ul>
+          <li>
+            Make sure your Portfolio folder contains:
+            <ul>
+              <li>index.html file</li>
+              <li>styles.css file</li>
+              <li>script.js file</li>
+              <li>images folder</li>
+              <li>
+                All your project folders (Project1, Project2, Project3,
+                Project4)
+              </li>
+            </ul>
+          </li>
+          <li>Compress your "Portfolio" folder into a zip file</li>
+          <li>
+            Submit your zip file here:
+            <a
+              href="https://liveumb-my.sharepoint.com/:f:/g/personal/david_martinez003_umb_edu/EvoHkZRrHAFJkRfU5RCvW9kB_Yr773oaFl4ThwqC4qz7FA"
+              target="_blank"
+              >Submit Final Project</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 UMass Boston.</p>
+    </footer>
+  </body>
+</html>

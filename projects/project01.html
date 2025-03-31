@@ -73,109 +73,114 @@
     <div class="container">
       <h2>Project 1:</h2>
       <h3>
-        Creating a Themed Website:
+        Creating Your First Webpage:
         <a href="examples/project1/index.html" target="_blank">Example Site</a>
       </h3>
 
       <div class="goal">
         <h3>Goal:</h3>
         <span
-          >Create a themed website with:
-          <ul>
-            <li>3 webpages</li>
-            <li>Headings, paragraphs, and images</li>
-            <li>Navigation links between pages</li>
-            <li>External links</li>
-            <li>Lists (ordered or unordered)</li>
-          </ul>
+          >Create a simple webpage about yourself using basic HTML elements.
+          Learn how to structure content and add links!
         </span>
       </div>
 
       <div class="instructions">
         <h3>Instructions:</h3>
-        <h4>Create a New HTML File:</h4>
+        <h4>Create Your Project Folder:</h4>
+        <ul>
+          <li>Create a new folder named "Project1" in your workspace</li>
+          <li>Inside this folder, create a new file named "index.html"</li>
+        </ul>
+        <h4>Set Up Your HTML File:</h4>
         <ul>
           <li>
-            In your “Week 1” folder, create a new folder named “Project1”.
-          </li>
-          <li>
-            Open your “Project1” folder and create an HTML file named
-            “index.html”.
+            Open your index.html file and add this basic HTML structure:
+            <div class="code">
+              <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
+    
+    &lt;nav&gt;
+        &lt;a href="#about"&gt;About Me&lt;/a&gt;
+        &lt;a href="#interests"&gt;My Interests&lt;/a&gt;
+        &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;section id="about"&gt;
+        &lt;h2&gt;About Me&lt;/h2&gt;
+        &lt;p&gt;Write a few sentences about yourself here.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="interests"&gt;
+        &lt;h2&gt;My Interests&lt;/h2&gt;
+        &lt;p&gt;Share some things you like to do!&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="contact"&gt;
+        &lt;h2&gt;Contact Me&lt;/h2&gt;
+        &lt;p&gt;Add your email or social media links here.&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </div>
           </li>
         </ul>
-        <h4>Website Requirements:</h4>
+        <h4>Add Your Content:</h4>
         <ul>
           <li>
-            Each page should include headings, paragraphs, and images
+            Replace the placeholder text with your own information:
             <ul>
-              <li>You must use &lt;h1&gt; - &lt;h3&gt; tags</li>
-              <li>Include 1 image per page</li>
+              <li>Change the title to something you like</li>
+              <li>Add your name in the h1 heading</li>
+              <li>Write about yourself in the About Me section</li>
+              <li>List your interests in the Interests section</li>
+              <li>Add your contact information in the Contact section</li>
             </ul>
           </li>
-          <li>
-            Use the &lt;div&gt; tag to make distinct sections on at least one
-            page
-          </li>
-          <li>Use the &lt;span&gt; tag to have colored text on the page</li>
-          <li>
-            Use the &lt;a&gt; tag to link to your other HTML pages, and have at
-            least one external link
-          </li>
-          <li>
-            Include the use of lists somewhere on your website
-            <ul>
-              <li>Ordered or unordered lists</li>
-            </ul>
-          </li>
         </ul>
-        <h4>Create the Additional Pages:</h4>
+        <h4>Add Some Lists:</h4>
         <ul>
           <li>
-            In your “Project1” folder, create two more HTML files named
-            “page1.html” and “page2.html”.
+            Add an unordered list of your favorite things:
+            <div class="code">
+              <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;First favorite thing&lt;/li&gt;
+    &lt;li&gt;Second favorite thing&lt;/li&gt;
+    &lt;li&gt;Third favorite thing&lt;/li&gt;
+&lt;/ul&gt;
+              </code></pre>
+            </div>
+          </li>
+          <li>
+            Add an ordered list of your goals:
+            <div class="code">
+              <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;First goal&lt;/li&gt;
+    &lt;li&gt;Second goal&lt;/li&gt;
+    &lt;li&gt;Third goal&lt;/li&gt;
+&lt;/ol&gt;
+              </code></pre>
+            </div>
           </li>
         </ul>
-        <h4>Set Up the Basic HTML Structure:</h4>
+        <h4>Add Links:</h4>
         <ul>
           <li>
-            For each of your HTML files (index.html, page1.html, page2.html),
-            type the following basic HTML structure:
-          </li>
-        </ul>
-        <div class="code">
-          <pre>
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-    &lt;title&gt;Themed Webpage&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;div class=&quot;navigation&quot;&gt;
-        &lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;
-        &lt;a href=&quot;page1.html&quot;&gt;Page 1&lt;/a&gt;
-        &lt;a href=&quot;page2.html&quot;&gt;Page 2&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;content&quot;&gt;
-        &lt;!-- Content for each page goes here --&gt;
-    &lt;/div&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;</pre
-          >
-        </div>
-        <h4>Adding Content to Each Page:</h4>
-        <ul>
-          <li>
-            Start filling out each page with content related to your theme.
-            Include headings, paragraphs, and images as described in the
-            requirements.
-          </li>
-          <li>
-            Ensure you use &lt;div&gt; for distinct sections and &lt;span&gt;
-            for colored text within your paragraphs.
-          </li>
-          <li>
-            Include links to other pages within the navigation div and at least
-            one external link in the content.
+            Add at least one link to a website you like:
+            <div class="code">
+              <pre><code>
+&lt;a href="https://www.example.com"&gt;Visit my favorite website&lt;/a&gt;
+              </code></pre>
+            </div>
           </li>
         </ul>
         <h4>Viewing Your Web Page:</h4>
@@ -183,35 +188,24 @@
           <li>
             Run Your Project with Live Server:
             <ul>
-              <li>
-                Right-click on your “index.html” file and select “Open with Live
-                Server”.
-              </li>
-              <li>This will open your web page in your default browser.</li>
-              <li>
-                Navigate through your site using the link in the navigation div.
-              </li>
+              <li>Right-click on your "index.html" file</li>
+              <li>Select "Open with Live Server"</li>
+              <li>This will open your web page in your browser</li>
             </ul>
           </li>
-          <li>
-            Run Your Project with Live Preview:
-            <ul>
-              <li>
-                Right-click on your “index.html” file and select “Show Preview”.
-              </li>
-              <li>
-                This will open your web page in a tab in VS Code next to your
-                HTML file.
-              </li>
-            </ul>
-          </li>
+          <li>Click the navigation links to make sure they work!</li>
         </ol>
         <h4>Submission:</h4>
         <ul>
-          <li>Ensure all your files are correctly linked and functional.</li>
-          <li>Compress your “Project1” folder into a zip file.</li>
           <li>
-            Submit your zipped “Project1” folder with all your HTML files here:
+            Make sure your Project1 folder contains:
+            <ul>
+              <li>index.html file with your content</li>
+            </ul>
+          </li>
+          <li>Compress your "Project1" folder into a zip file</li>
+          <li>
+            Submit your zip file here:
             <a
               href="https://liveumb-my.sharepoint.com/:f:/g/personal/david_martinez003_umb_edu/EvoHkZRrHAFJkRfU5RCvW9kB_Yr773oaFl4ThwqC4qz7FA"
               target="_blank"

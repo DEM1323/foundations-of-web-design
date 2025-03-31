@@ -72,113 +72,107 @@
     </header>
     <div class="container">
       <h2>Project 3:</h2>
-      <h3>Designing a Portfolio Website Wireframe</h3>
+      <h3>
+        Making Your Page Mobile-Friendly:
+        <a href="examples/project3/index.html" target="_blank">Example Site</a>
+      </h3>
 
       <div class="goal">
         <h3>Goal:</h3>
         <span
-          >Research different portfolio websites, create a wireframe in Figma
-          for your own portfolio website, and select two fonts from Google Fonts
-          to use for this website.
+          >Make your webpage look good on both desktop and mobile devices. Learn
+          how to use CSS to create a responsive layout!
         </span>
       </div>
 
       <div class="instructions">
         <h3>Instructions:</h3>
-        <h4>Research Portfolio Websites:</h4>
+        <h4>Start with Your Project 2 Files:</h4>
         <ul>
           <li>
-            Spend some time browsing the web to find examples of portfolio
-            websites.
-          </li>
-          <li>
-            Look at different styles, layouts, and features that you find
-            appealing or effective.
-          </li>
-          <li>
-            Take notes on what you like and dislike about each site, and
-            consider how you might incorporate these elements into your own
-            design.
+            Make a copy of your "Project2" folder and rename it to "Project3"
           </li>
         </ul>
-        <h4>Setup Your Figma Workspace:</h4>
-        <ul>
-          <li>Go to Figma and log in to your account.</li>
-          <li>Create a new project for your portfolio website wireframe.</li>
-        </ul>
-        <h4>Create a Wireframe:</h4>
+        <h4>Update Your CSS File:</h4>
         <ul>
           <li>
-            Within your new project, create a new frame by clicking the Frame
-            tool (or press F).
+            Open your styles.css file and add these responsive styles:
+            <div class="code">
+              <pre><code>
+/* Make the page look good on all devices */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for mobile devices */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    nav {
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+              </code></pre>
+            </div>
           </li>
-          <li>
-            Set the dimensions of the frame to a standard desktop resolution,
-            such as 1440x900.
-          </li>
         </ul>
-        <h4>Design Your Portfolio Website Wireframe:</h4>
+        <h4>Test Your Page:</h4>
+        <ol>
+          <li>Open your page in Chrome</li>
+          <li>Right-click anywhere on the page and select "Inspect"</li>
+          <li>
+            Click the "Toggle device toolbar" button (looks like a phone/tablet)
+          </li>
+          <li>Try different device sizes to see how your page looks</li>
+        </ol>
+        <h4>Make Adjustments:</h4>
         <ul>
           <li>
-            Design the wireframe for your portfolio website, including the
-            following sections:
+            If something doesn't look right on mobile:
             <ul>
-              <li>
-                <strong>Header:</strong> Include your name or logo and a
-                navigation menu.
-              </li>
-              <li>
-                <strong>About Me:</strong> A section to introduce yourself and
-                provide some background information.
-              </li>
-              <li>
-                <strong>Projects/Portfolio:</strong> A section to showcase your
-                work, with space for images, descriptions, and links.
-              </li>
-              <li>
-                <strong>Contact:</strong> A section with your contact
-                information and/or a contact form.
-              </li>
-              <li>
-                <strong>Footer:</strong> A full-width section for additional
-                links or information.
-              </li>
+              <li>Check if your images are too large</li>
+              <li>Make sure text is readable</li>
+              <li>Adjust spacing if needed</li>
             </ul>
           </li>
-          <li>
-            Use Figma’s tools to create the structure and layout of each
-            section.
-          </li>
-          <li>
-            Add placeholder text and shapes to represent images, navigation
-            links, and content areas.
-          </li>
-          <li>
-            Include annotations to explain the purpose of each section and any
-            specific design choices.
-          </li>
         </ul>
-        <h4>Select Fonts from Google Fonts:</h4>
-        <ul>
-          <li>Visit <a href="https://fonts.google.com/">Google Fonts.</a></li>
-          <li>
-            Browse the available fonts and select two fonts that you would like
-            to use for your portfolio website.
-          </li>
-          <li>
-            Make a note of the font names and consider how you will use them
-            (e.g., one for headings and one for body text).
-          </li>
-        </ul>
-        <h4>Viewing Your Wireframe:</h4>
+        <h4>Submission:</h4>
         <ul>
           <li>
-            Once you have completed your wireframe, use Figma’s presentation
-            mode to view and present your design.
+            Make sure your Project3 folder contains:
+            <ul>
+              <li>index.html file</li>
+              <li>styles.css file with responsive styles</li>
+              <li>images folder with your images</li>
+            </ul>
           </li>
+          <li>Compress your "Project3" folder into a zip file</li>
           <li>
-            Click the “Present” button in the top right corner of Figma to view
-            your wireframe as a full-screen presentation.
+            Submit your zip file here:
+            <a
+              href="https://liveumb-my.sharepoint.com/:f:/g/personal/david_martinez003_umb_edu/EvoHkZRrHAFJkRfU5RCvW9kB_Yr773oaFl4ThwqC4qz7FA"
+              target="_blank"
+              >Submit Project 3</a
+            >
           </li>
         </ul>
       </div>
