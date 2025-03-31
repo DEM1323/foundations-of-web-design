@@ -1,66 +1,136 @@
+/* Star Wars Theme Colors */
+:root {
+  --star-wars-yellow: #fede42;
+  --star-wars-blue: #005a8b;
+  --star-wars-black: #000000;
+  --star-wars-white: #ffffff;
+}
+
+/* Basic styles */
 body {
-    background-color: #000;
-    color: white;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-a {
-    color: rgba(207, 183, 0, 0.998);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgba(255, 225, 1, 0.998);
-}
-
+/* Header styles */
 header {
-    margin: 5px 0;
-    padding: 0;
+  background-color: #005a8b;
+  padding: 1rem;
+  text-align: center;
 }
 
-header img { 
-    display: block;
-    height: 150px;
-    margin: 0 auto;
+h1 {
+  color: #fede42;
+  margin: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-nav {
-    padding: 10px;
-    text-align: center;
-    width: 90%;
-    border-bottom: solid 1px grey;
-    margin: 0 auto;
-
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
 }
 
-nav > a {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0 10px;
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
 }
 
-.content {
-    margin-left: 5%;
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.content > h1 {
-    font-size: 2.25rem;
+nav a:hover {
+  background-color: #fede42;
+  color: #000000;
 }
 
-.content > h2 {
-    font-size: 1.75rem;
+nav a.active {
+  background-color: #fede42;
+  color: #000000;
 }
 
-.content > h3 {
-    font-size: 1.25rem;
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://via.placeholder.com/1920x1080') center/cover;
 }
 
+.hero h2 {
+  color: #fede42;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Featured content */
+.featured {
+  padding: 2rem;
+  text-align: center;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.content-card {
+  background-color: #005a8b;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+}
+
+.content-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.content-card h3 {
+  color: #fede42;
+  margin: 0.5rem 0;
+}
+
+/* Footer styles */
 footer {
-    background-color: grey;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 30%;
+  background-color: #005a8b;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundations of Web Design</title>
+    <title>Project 3: Making Your Website Mobile-Friendly</title>
     <link rel="stylesheet" href="../styles.css" />
     <style>
       body {
@@ -43,9 +43,9 @@
       .code {
         background-color: #005a8b;
         color: #fff;
-        padding: 0 10px;
+        padding: 10px;
         border-radius: 5px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
       }
       a {
         color: #1e90ff;
@@ -58,13 +58,13 @@
   </head>
   <body>
     <header>
-      <h1>Foundations of Web Design</h1>
+      <h1>Project 3: Making Your Website Mobile-Friendly</h1>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../course-info.html">Course Info</a></li>
           <li><a href="../class-slides.html">Class Slides</a></li>
-          <li><a href="../class-exercises.html">Class Exercises</a></li>
+          <!-- <li><a href="../class-exercises.html">Class Exercises</a></li> -->
           <li><a href="../projects.html" class="active">Projects</a></li>
           <li><a href="../resources.html">Resources</a></li>
         </ul>
@@ -73,46 +73,54 @@
     <div class="container">
       <h2>Project 3:</h2>
       <h3>
-        Making Your Page Mobile-Friendly:
+        Making Your Website Mobile-Friendly:
         <a href="examples/project3/index.html" target="_blank">Example Site</a>
       </h3>
 
       <div class="goal">
         <h3>Goal:</h3>
         <span
-          >Make your webpage look good on both desktop and mobile devices. Learn
-          how to use CSS to create a responsive layout!
-        </span>
+          >Update your three-page website to work well on both desktop and
+          mobile devices using responsive design techniques!</span
+        >
       </div>
 
       <div class="instructions">
         <h3>Instructions:</h3>
         <h4>Start with Your Project 2 Files:</h4>
         <ul>
+          <li>Create a new folder named "Project3"</li>
           <li>
-            Make a copy of your "Project2" folder and rename it to "Project3"
+            Copy your three HTML files and styles.css from Project 2 into this
+            folder
           </li>
         </ul>
-        <h4>Update Your CSS File:</h4>
+
+        <h4>Add Viewport Meta Tag:</h4>
         <ul>
           <li>
-            Open your styles.css file and add these responsive styles:
+            Add this line in the &lt;head&gt; section of each HTML file:
             <div class="code">
               <pre><code>
-/* Make the page look good on all devices */
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              </code></pre>
+            </div>
+          </li>
+        </ul>
 
+        <h4>Update Your CSS:</h4>
+        <ul>
+          <li>
+            Add these responsive styles to your CSS file:
+            <div class="code">
+              <pre><code>
 /* Make images responsive */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Style for mobile devices */
+/* Mobile-friendly navigation */
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
@@ -130,39 +138,47 @@ img {
         display: block;
         margin: 5px 0;
     }
+    
+    section {
+        padding: 15px;
+    }
 }
               </code></pre>
             </div>
           </li>
         </ul>
-        <h4>Test Your Page:</h4>
+
+        <h4>Test Your Website:</h4>
         <ol>
-          <li>Open your page in Chrome</li>
-          <li>Right-click anywhere on the page and select "Inspect"</li>
+          <li>Open Chrome and load your website</li>
           <li>
-            Click the "Toggle device toolbar" button (looks like a phone/tablet)
-          </li>
-          <li>Try different device sizes to see how your page looks</li>
-        </ol>
-        <h4>Make Adjustments:</h4>
-        <ul>
-          <li>
-            If something doesn't look right on mobile:
+            Open Chrome DevTools:
             <ul>
-              <li>Check if your images are too large</li>
-              <li>Make sure text is readable</li>
-              <li>Adjust spacing if needed</li>
+              <li>Right-click anywhere on the page</li>
+              <li>Select "Inspect"</li>
+              <li>Click the "Toggle device toolbar" button (mobile icon)</li>
             </ul>
           </li>
-        </ul>
+          <li>
+            Test different screen sizes:
+            <ul>
+              <li>Desktop view (default)</li>
+              <li>Tablet view (768px)</li>
+              <li>Mobile view (375px)</li>
+            </ul>
+          </li>
+          <li>Make sure all three pages look good on each screen size</li>
+        </ol>
+
         <h4>Submission:</h4>
         <ul>
           <li>
             Make sure your Project3 folder contains:
             <ul>
               <li>index.html file</li>
-              <li>styles.css file with responsive styles</li>
-              <li>images folder with your images</li>
+              <li>page2.html file</li>
+              <li>page3.html file</li>
+              <li>styles.css file</li>
             </ul>
           </li>
           <li>Compress your "Project3" folder into a zip file</li>

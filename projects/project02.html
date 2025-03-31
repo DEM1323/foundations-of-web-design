@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundations of Web Design</title>
+    <title>Project 2: Styling Your Website</title>
     <link rel="stylesheet" href="../styles.css" />
     <style>
       body {
@@ -43,9 +43,9 @@
       .code {
         background-color: #005a8b;
         color: #fff;
-        padding: 0 10px;
+        padding: 10px;
         border-radius: 5px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
       }
       a {
         color: #1e90ff;
@@ -58,13 +58,13 @@
   </head>
   <body>
     <header>
-      <h1>Foundations of Web Design</h1>
+      <h1>Project 2: Styling Your Website</h1>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../course-info.html">Course Info</a></li>
           <li><a href="../class-slides.html">Class Slides</a></li>
-          <li><a href="../class-exercises.html">Class Exercises</a></li>
+          <!-- <li><a href="../class-exercises.html">Class Exercises</a></li> -->
           <li><a href="../projects.html" class="active">Projects</a></li>
           <li><a href="../resources.html">Resources</a></li>
         </ul>
@@ -73,51 +73,32 @@
     <div class="container">
       <h2>Project 2:</h2>
       <h3>
-        Styling Your Homepage:
+        Styling Your Website:
         <a href="examples/project2/index.html" target="_blank">Example Site</a>
       </h3>
 
       <div class="goal">
         <h3>Goal:</h3>
         <span
-          >Take your homepage from Project 1 and style it using CSS. Add some
-          images and make it look better!
-        </span>
+          >Style your three-page website from Project 1 using CSS to make it
+          visually appealing and consistent across all pages!</span
+        >
       </div>
 
       <div class="instructions">
         <h3>Instructions:</h3>
-        <h4>Start with Your Project 1 Files:</h4>
+        <h4>Set Up Your CSS File:</h4>
         <ul>
-          <li>
-            Make a copy of your "Project1" folder and rename it to "Project2"
-          </li>
+          <li>Create a new folder named "Project2"</li>
+          <li>Copy your three HTML files from Project 1 into this folder</li>
+          <li>Create a new file named "styles.css" in the same folder</li>
+          <li>Link the CSS file to all three HTML pages</li>
         </ul>
-        <h4>Add Images to Your Page:</h4>
+
+        <h4>Add CSS Link:</h4>
         <ul>
-          <li>Create an "images" folder inside your Project2 folder</li>
           <li>
-            Add at least two images to this folder:
-            <ul>
-              <li>One profile picture of yourself</li>
-              <li>One image related to your interests or hobbies</li>
-            </ul>
-          </li>
-          <li>
-            Add the images to your HTML file using the &lt;img&gt; tag:
-            <div class="code">
-              <pre><code>
-&lt;img src="images/your-image.jpg" alt="Description of your image"&gt;
-              </code></pre>
-            </div>
-          </li>
-        </ul>
-        <h4>Create a CSS File:</h4>
-        <ul>
-          <li>In your Project2 folder, create a new file named "styles.css"</li>
-          <li>
-            Add this line in your HTML file's &lt;head&gt; section to link the
-            CSS:
+            Add this line in the &lt;head&gt; section of each HTML file:
             <div class="code">
               <pre><code>
 &lt;link rel="stylesheet" href="styles.css"&gt;
@@ -125,67 +106,93 @@
             </div>
           </li>
         </ul>
-        <h4>Add Basic CSS Styles:</h4>
+
+        <h4>Add Basic Styles:</h4>
         <ul>
           <li>
-            Open your styles.css file and add these basic styles:
+            Add these basic styles to your CSS file:
             <div class="code">
               <pre><code>
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h1 {
     color: #333;
     text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
-img {
-    max-width: 300px;
-    display: block;
-    margin: 20px auto;
-}
-
-p {
-    line-height: 1.6;
-    color: #444;
-}
-              </code></pre>
-            </div>
-          </li>
-          <li>Try changing the colors and values to make it your own!</li>
-        </ul>
-        <h4>Style Your Navigation:</h4>
-        <ul>
-          <li>
-            Add these styles to make your navigation look better:
-            <div class="code">
-              <pre><code>
 nav {
-    background-color: #333;
-    padding: 10px;
+    text-align: center;
     margin: 20px 0;
 }
 
 nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #333;
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
-    margin: 0 5px;
+    border-radius: 3px;
 }
 
 nav a:hover {
     background-color: #555;
-    border-radius: 3px;
+}
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
               </code></pre>
             </div>
           </li>
         </ul>
-        <h4>Viewing Your Web Page:</h4>
+
+        <h4>Add Your Own Styles:</h4>
+        <ul>
+          <li>
+            Choose 3-5 colors that work well together and use them consistently:
+            <ul>
+              <li>Use one color for backgrounds</li>
+              <li>Use another for text</li>
+              <li>Use others for accents and borders</li>
+            </ul>
+          </li>
+          <li>
+            Style your lists and links:
+            <div class="code">
+              <pre><code>
+ul, ol {
+    margin-left: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+              </code></pre>
+            </div>
+          </li>
+        </ul>
+
+        <h4>Viewing Your Website:</h4>
         <ol>
           <li>
             Run Your Project with Live Server:
@@ -195,26 +202,26 @@ nav a:hover {
               <li>This will open your web page in your browser</li>
             </ul>
           </li>
-          <li>
-            Try making changes to your CSS file and refresh the page to see what
-            happens!
-          </li>
+          <li>Check that all three pages look consistent</li>
+          <li>Make sure all styles are working correctly</li>
         </ol>
+
         <h4>Submission:</h4>
         <ul>
           <li>
-            Make sure all your files are in the Project2 folder:
+            Make sure your Project2 folder contains:
             <ul>
-              <li>index.html</li>
-              <li>styles.css</li>
-              <li>images folder with your images</li>
+              <li>index.html file</li>
+              <li>page2.html file</li>
+              <li>page3.html file</li>
+              <li>styles.css file</li>
             </ul>
           </li>
           <li>Compress your "Project2" folder into a zip file</li>
           <li>
             Submit your zip file here:
             <a
-              href="https://liveumb-my.sharepoint.com/:f:/g/personal/david_martinez003_umb_edu/EtFeHqhd9ChDk9mJsfSsIoABNpbicaBK8-W4np8bSDWesg"
+              href="https://liveumb-my.sharepoint.com/:f:/g/personal/david_martinez003_umb_edu/EvoHkZRrHAFJkRfU5RCvW9kB_Yr773oaFl4ThwqC4qz7FA"
               target="_blank"
               >Submit Project 2</a
             >

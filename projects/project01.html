@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundations of Web Design</title>
+    <title>Project 1: Creating Your First Website</title>
     <link rel="stylesheet" href="../styles.css" />
     <style>
       body {
@@ -58,13 +58,13 @@
   </head>
   <body>
     <header>
-      <h1>Foundations of Web Design</h1>
+      <h1>Project 1: Creating Your First Website</h1>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../course-info.html">Course Info</a></li>
           <li><a href="../class-slides.html">Class Slides</a></li>
-          <li><a href="../class-exercises.html">Class Exercises</a></li>
+          <!-- <li><a href="../class-exercises.html">Class Exercises</a></li> -->
           <li><a href="../projects.html" class="active">Projects</a></li>
           <li><a href="../resources.html">Resources</a></li>
         </ul>
@@ -73,16 +73,19 @@
     <div class="container">
       <h2>Project 1:</h2>
       <h3>
-        Creating Your First Webpage:
-        <a href="examples/project1/index.html" target="_blank">Example Site</a>
+        Creating Your First Website:
+        <a href="./examples/project1/index.html" target="_blank"
+          >Example Site</a
+        >
       </h3>
 
       <div class="goal">
         <h3>Goal:</h3>
         <span
-          >Create a simple webpage about yourself using basic HTML elements.
-          Learn how to structure content and add links!
-        </span>
+          >Create a three-page website about a topic you're passionate about
+          using basic HTML elements. Learn how to structure content and link
+          between pages!</span
+        >
       </div>
 
       <div class="instructions">
@@ -90,100 +93,101 @@
         <h4>Create Your Project Folder:</h4>
         <ul>
           <li>Create a new folder named "Project1" in your workspace</li>
-          <li>Inside this folder, create a new file named "index.html"</li>
+          <li>
+            Inside this folder, create three HTML files:
+            <ul>
+              <li>index.html (home page)</li>
+              <li>page2.html (second page)</li>
+              <li>page3.html (third page)</li>
+            </ul>
+          </li>
         </ul>
-        <h4>Set Up Your HTML File:</h4>
+
+        <h4>Set Up Your HTML Files:</h4>
         <ul>
           <li>
-            Open your index.html file and add this basic HTML structure:
+            Open each HTML file and add this basic HTML structure:
             <div class="code">
               <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;My First Webpage&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
-    
+  &lt;head&gt;
+    &lt;title&gt;Your Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Your Main Heading&lt;/h1&gt;
+
     &lt;nav&gt;
-        &lt;a href="#about"&gt;About Me&lt;/a&gt;
-        &lt;a href="#interests"&gt;My Interests&lt;/a&gt;
-        &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+      &lt;a href="index.html"&gt;Home&lt;/a&gt;
+      &lt;a href="page2.html"&gt;Page 2&lt;/a&gt;
+      &lt;a href="page3.html"&gt;Page 3&lt;/a&gt;
     &lt;/nav&gt;
 
-    &lt;section id="about"&gt;
-        &lt;h2&gt;About Me&lt;/h2&gt;
-        &lt;p&gt;Write a few sentences about yourself here.&lt;/p&gt;
+    &lt;section&gt;
+      &lt;h2&gt;First Section&lt;/h2&gt;
+      &lt;p&gt;Your content here...&lt;/p&gt;
     &lt;/section&gt;
 
-    &lt;section id="interests"&gt;
-        &lt;h2&gt;My Interests&lt;/h2&gt;
-        &lt;p&gt;Share some things you like to do!&lt;/p&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Second Section&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;List item 1&lt;/li&gt;
+        &lt;li&gt;List item 2&lt;/li&gt;
+      &lt;/ul&gt;
     &lt;/section&gt;
-
-    &lt;section id="contact"&gt;
-        &lt;h2&gt;Contact Me&lt;/h2&gt;
-        &lt;p&gt;Add your email or social media links here.&lt;/p&gt;
-    &lt;/section&gt;
-&lt;/body&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
               </code></pre>
             </div>
           </li>
         </ul>
+
         <h4>Add Your Content:</h4>
         <ul>
           <li>
-            Replace the placeholder text with your own information:
+            For each page, replace the placeholder text with your own
+            information:
             <ul>
-              <li>Change the title to something you like</li>
-              <li>Add your name in the h1 heading</li>
-              <li>Write about yourself in the About Me section</li>
-              <li>List your interests in the Interests section</li>
-              <li>Add your contact information in the Contact section</li>
+              <li>
+                Choose a topic you're interested in (like movies, games, sports,
+                etc.)
+              </li>
+              <li>Write about different aspects of your topic on each page</li>
+              <li>Add appropriate headings and sections</li>
+              <li>Include lists of related items</li>
             </ul>
           </li>
         </ul>
-        <h4>Add Some Lists:</h4>
+
+        <h4>Add Lists:</h4>
         <ul>
           <li>
-            Add an unordered list of your favorite things:
+            Add an unordered list of items:
             <div class="code">
               <pre><code>
 &lt;ul&gt;
-    &lt;li&gt;First favorite thing&lt;/li&gt;
-    &lt;li&gt;Second favorite thing&lt;/li&gt;
-    &lt;li&gt;Third favorite thing&lt;/li&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
 &lt;/ul&gt;
               </code></pre>
             </div>
           </li>
           <li>
-            Add an ordered list of your goals:
+            Add an ordered list of items:
             <div class="code">
               <pre><code>
 &lt;ol&gt;
-    &lt;li&gt;First goal&lt;/li&gt;
-    &lt;li&gt;Second goal&lt;/li&gt;
-    &lt;li&gt;Third goal&lt;/li&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
 &lt;/ol&gt;
               </code></pre>
             </div>
           </li>
         </ul>
-        <h4>Add Links:</h4>
-        <ul>
-          <li>
-            Add at least one link to a website you like:
-            <div class="code">
-              <pre><code>
-&lt;a href="https://www.example.com"&gt;Visit my favorite website&lt;/a&gt;
-              </code></pre>
-            </div>
-          </li>
-        </ul>
-        <h4>Viewing Your Web Page:</h4>
+
+        <h4>Viewing Your Website:</h4>
         <ol>
           <li>
             Run Your Project with Live Server:
@@ -195,12 +199,15 @@
           </li>
           <li>Click the navigation links to make sure they work!</li>
         </ol>
+
         <h4>Submission:</h4>
         <ul>
           <li>
             Make sure your Project1 folder contains:
             <ul>
-              <li>index.html file with your content</li>
+              <li>index.html file</li>
+              <li>page2.html file</li>
+              <li>page3.html file</li>
             </ul>
           </li>
           <li>Compress your "Project1" folder into a zip file</li>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars: Movies</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Star Wars Fan Site</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="movies.html" class="active">Movies</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Star Wars Movies</h2>
+        <p>Experience the epic saga across nine films!</p>
+      </section>
+
+      <section class="movie-timeline">
+        <h2>Movie Timeline</h2>
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Original Trilogy</h3>
+              <div class="movie-grid">
+                <div class="movie-card hover-effect">
+                  <img
+                    src="https://via.placeholder.com/300x450"
+                    alt="Episode IV"
+                  />
+                  <h4>Episode IV: A New Hope</h4>
+                  <button class="movie-details-btn">View Details</button>
+                </div>
+                <div class="movie-card hover-effect">
+                  <img
+                    src="https://via.placeholder.com/300x450"
+                    alt="Episode V"
+                  />
+                  <h4>Episode V: The Empire Strikes Back</h4>
+                  <button class="movie-details-btn">View Details</button>
+                </div>
+                <div class="movie-card hover-effect">
+                  <img
+                    src="https://via.placeholder.com/300x450"
+                    alt="Episode VI"
+                  />
+                  <h4>Episode VI: Return of the Jedi</h4>
+                  <button class="movie-details-btn">View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="interactive">
+        <h2>Movie Quiz</h2>
+        <div class="quiz-container">
+          <div id="movie-quiz">
+            <p id="quiz-question">Which movie introduced Darth Vader?</p>
+            <div class="quiz-options">
+              <button class="quiz-option">Episode IV: A New Hope</button>
+              <button class="quiz-option">
+                Episode V: The Empire Strikes Back
+              </button>
+              <button class="quiz-option">
+                Episode VI: Return of the Jedi
+              </button>
+              <button class="quiz-option">Episode I: The Phantom Menace</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="movie-spotlight">
+        <h2>Movie Spotlight</h2>
+        <div class="spotlight-container">
+          <div class="spotlight-card">
+            <img
+              src="https://via.placeholder.com/300x450"
+              alt="Featured Movie"
+            />
+            <div class="spotlight-content">
+              <h3>Featured Movie</h3>
+              <p>Click the button to reveal a random movie!</p>
+              <button id="randomMovieBtn" class="interactive-btn">
+                Reveal Movie
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="movie-rating">
+        <h2>Rate Your Favorite Movie</h2>
+        <div class="rating-container">
+          <div class="rating-card">
+            <h3>Movie Rating</h3>
+            <div class="star-rating">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <p id="rating-text">Click the stars to rate!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>May the Force be with you! &copy; 2024 Star Wars Fan Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars: Interactive Fan Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Star Wars Fan Site</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Welcome to the Galaxy</h2>
+        <p>Click the button below to activate your lightsaber!</p>
+        <button id="lightsaberBtn" class="interactive-btn">
+          Activate Lightsaber
+        </button>
+        <div id="lightsaber" class="lightsaber"></div>
+      </section>
+
+      <section class="featured">
+        <h2>Featured Content</h2>
+        <div class="content-grid">
+          <div class="content-card hover-effect">
+            <img src="https://via.placeholder.com/300x200" alt="Latest News" />
+            <h3>Latest News</h3>
+            <p>Stay updated with the latest Star Wars announcements.</p>
+            <button class="read-more">Read More</button>
+          </div>
+          <div class="content-card hover-effect">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Character Spotlight"
+            />
+            <h3>Character Spotlight</h3>
+            <p>Learn more about your favorite characters.</p>
+            <button class="read-more">Read More</button>
+          </div>
+          <div class="content-card hover-effect">
+            <img
+              src="https://via.placeholder.com/300x200"
+              alt="Movie Updates"
+            />
+            <h3>Movie Updates</h3>
+            <p>Get the latest updates on upcoming Star Wars films.</p>
+            <button class="read-more">Read More</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="interactive">
+        <h2>Interactive Elements</h2>
+        <div class="interactive-container">
+          <div class="force-meter">
+            <h3>Force Meter</h3>
+            <div class="meter-bar">
+              <div class="meter-fill"></div>
+            </div>
+            <button id="chargeBtn" class="interactive-btn">Charge Force</button>
+          </div>
+          <div class="quiz-section">
+            <h3>Star Wars Quiz</h3>
+            <div id="quiz-container">
+              <p id="quiz-question">Who is Luke Skywalker's father?</p>
+              <div class="quiz-options">
+                <button class="quiz-option">Darth Vader</button>
+                <button class="quiz-option">Obi-Wan Kenobi</button>
+                <button class="quiz-option">Yoda</button>
+                <button class="quiz-option">Han Solo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2>Latest Updates</h2>
+        <div class="news-grid">
+          <article class="news-card fade-in">
+            <img src="https://via.placeholder.com/300x200" alt="News 1" />
+            <h3>New Series Announced</h3>
+            <p>Disney+ announces new Star Wars series coming in 2024.</p>
+          </article>
+          <article class="news-card fade-in">
+            <img src="https://via.placeholder.com/300x200" alt="News 2" />
+            <h3>4K Remaster</h3>
+            <p>Original trilogy coming to 4K Blu-ray this summer.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>May the Force be with you! &copy; 2024 Star Wars Fan Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundations of Web Design</title>
+    <title>Project 4: Adding Animations and Interactivity</title>
     <link rel="stylesheet" href="../styles.css" />
     <style>
       body {
@@ -58,13 +58,13 @@
   </head>
   <body>
     <header>
-      <h1>Foundations of Web Design</h1>
+      <h1>Project 4: Adding Animations and Interactivity</h1>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../course-info.html">Course Info</a></li>
           <li><a href="../class-slides.html">Class Slides</a></li>
-          <li><a href="../class-exercises.html">Class Exercises</a></li>
+          <!-- <li><a href="../class-exercises.html">Class Exercises</a></li> -->
           <li><a href="../projects.html" class="active">Projects</a></li>
           <li><a href="../resources.html">Resources</a></li>
         </ul>
@@ -80,35 +80,37 @@
       <div class="goal">
         <h3>Goal:</h3>
         <span
-          >Add some fun animations and interactive elements to your webpage
-          using CSS and basic JavaScript!
-        </span>
+          >Add animations and interactive elements to your three-page website
+          using CSS and basic JavaScript!</span
+        >
       </div>
 
       <div class="instructions">
         <h3>Instructions:</h3>
         <h4>Start with Your Project 3 Files:</h4>
         <ul>
+          <li>Create a new folder named "Project4"</li>
           <li>
-            Make a copy of your "Project3" folder and rename it to "Project4"
+            Copy your three HTML files and styles.css from Project 3 into this
+            folder
           </li>
         </ul>
+
         <h4>Add CSS Animations:</h4>
         <ul>
           <li>
-            Open your styles.css file and add these animation styles:
+            Add these animation styles to your CSS file:
             <div class="code">
               <pre><code>
-/* Add hover effect to links */
-a:hover {
-    color: #ff6b6b;
-    transition: color 0.3s ease;
+/* Hover effects */
+nav a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
-/* Add fade-in animation to sections */
+/* Fade in animation */
 section {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
+    animation: fadeIn 1s ease-in;
 }
 
 @keyframes fadeIn {
@@ -116,37 +118,41 @@ section {
     to { opacity: 1; }
 }
 
-/* Add a simple hover effect to images */
+/* Smooth transitions */
+img {
+    transition: transform 0.3s ease;
+}
+
 img:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
 }
               </code></pre>
             </div>
           </li>
         </ul>
-        <h4>Add Basic JavaScript:</h4>
+
+        <h4>Add JavaScript:</h4>
         <ul>
-          <li>Create a new file named "script.js" in your Project4 folder</li>
           <li>
-            Add this code to script.js:
+            Create a new file named "script.js" and add this code:
             <div class="code">
               <pre><code>
-// Add a simple click counter
+// Add a click counter to each page
 let clickCount = 0;
 
-function countClicks() {
+document.addEventListener('click', function() {
     clickCount++;
-    alert('You clicked ' + clickCount + ' times!');
-}
-
-// Add this to your HTML file's body tag:
-// &lt;button onclick="countClicks()"&gt;Click me!&lt;/button&gt;
+    if (clickCount === 5) {
+        alert('You've clicked 5 times!');
+        clickCount = 0;
+    }
+});
               </code></pre>
             </div>
           </li>
           <li>
-            Add this line to your HTML file's &lt;head&gt; section:
+            Add this line before the closing &lt;/body&gt; tag in each HTML
+            file:
             <div class="code">
               <pre><code>
 &lt;script src="script.js"&gt;&lt;/script&gt;
@@ -154,34 +160,32 @@ function countClicks() {
             </div>
           </li>
         </ul>
-        <h4>Test Your Page:</h4>
+
+        <h4>Test Your Website:</h4>
         <ol>
           <li>
             Run Your Project with Live Server:
             <ul>
               <li>Right-click on your "index.html" file</li>
               <li>Select "Open with Live Server"</li>
+              <li>This will open your web page in your browser</li>
             </ul>
           </li>
-          <li>
-            Try out the animations:
-            <ul>
-              <li>Hover over links to see the color change</li>
-              <li>Hover over images to see them scale up</li>
-              <li>Watch sections fade in as you scroll</li>
-              <li>Click the button to test the counter</li>
-            </ul>
-          </li>
+          <li>Check that all animations work on each page</li>
+          <li>Test the click counter on each page</li>
+          <li>Make sure everything still works on mobile devices</li>
         </ol>
+
         <h4>Submission:</h4>
         <ul>
           <li>
             Make sure your Project4 folder contains:
             <ul>
               <li>index.html file</li>
-              <li>styles.css file with animations</li>
-              <li>script.js file with your JavaScript code</li>
-              <li>images folder with your images</li>
+              <li>page2.html file</li>
+              <li>page3.html file</li>
+              <li>styles.css file</li>
+              <li>script.js file</li>
             </ul>
           </li>
           <li>Compress your "Project4" folder into a zip file</li>

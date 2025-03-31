@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars: Characters</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Star Wars Fan Site</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html" class="active">Characters</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Star Wars Characters</h2>
+        <p>Explore the galaxy's most iconic characters!</p>
+      </section>
+
+      <section class="character-gallery">
+        <h2>Main Characters</h2>
+        <div class="content-grid">
+          <div class="character-card hover-effect">
+            <img
+              src="https://via.placeholder.com/300x400"
+              alt="Luke Skywalker"
+            />
+            <h3>Luke Skywalker</h3>
+            <p>The last Jedi of the original trilogy.</p>
+            <button class="character-details-btn">View Details</button>
+          </div>
+          <div class="character-card hover-effect">
+            <img src="https://via.placeholder.com/300x400" alt="Darth Vader" />
+            <h3>Darth Vader</h3>
+            <p>The dark lord of the Sith.</p>
+            <button class="character-details-btn">View Details</button>
+          </div>
+          <div class="character-card hover-effect">
+            <img
+              src="https://via.placeholder.com/300x400"
+              alt="Princess Leia"
+            />
+            <h3>Princess Leia</h3>
+            <p>Leader of the Rebel Alliance.</p>
+            <button class="character-details-btn">View Details</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="interactive">
+        <h2>Character Quiz</h2>
+        <div class="quiz-container">
+          <div id="character-quiz">
+            <p id="quiz-question">
+              Which character is known as the Dark Lord of the Sith?
+            </p>
+            <div class="quiz-options">
+              <button class="quiz-option">Luke Skywalker</button>
+              <button class="quiz-option">Darth Vader</button>
+              <button class="quiz-option">Obi-Wan Kenobi</button>
+              <button class="quiz-option">Yoda</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="character-spotlight">
+        <h2>Character Spotlight</h2>
+        <div class="spotlight-container">
+          <div class="spotlight-card">
+            <img
+              src="https://via.placeholder.com/300x400"
+              alt="Featured Character"
+            />
+            <div class="spotlight-content">
+              <h3>Featured Character</h3>
+              <p>Click the button to reveal a random character!</p>
+              <button id="randomCharacterBtn" class="interactive-btn">
+                Reveal Character
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="character-stats">
+        <h2>Character Stats</h2>
+        <div class="stats-container">
+          <div class="stat-card">
+            <h3>Force Power</h3>
+            <div class="stat-bar">
+              <div class="stat-fill" data-stat="85"></div>
+            </div>
+            <button class="update-stat-btn">Update Power</button>
+          </div>
+          <div class="stat-card">
+            <h3>Lightsaber Skill</h3>
+            <div class="stat-bar">
+              <div class="stat-fill" data-stat="90"></div>
+            </div>
+            <button class="update-stat-btn">Update Skill</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>May the Force be with you! &copy; 2024 Star Wars Fan Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
